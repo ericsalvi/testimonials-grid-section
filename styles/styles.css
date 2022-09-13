@@ -7,4 +7,39 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: hsl(0deg, 0%, 81%);
+}
+
+main {
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+}
+
+figure {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+figure:first-child {
+  background-color: hsl(263deg, 55%, 52%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+figure:nth-child(2) {
+  background-color: hsl(217deg, 19%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+figure:nth-child(3),
+figure:last-child {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+figure:nth-child(4) {
+  background-color: hsl(219deg, 29%, 14%);
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=styles.css.map */

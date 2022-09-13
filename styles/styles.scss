@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 *,
 *::before,
@@ -8,4 +9,40 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+}
+
+//temp css
+
+body {
+  background: $lightGray;
+}
+
+main {
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+}
+
+figure {
+  padding: 20px;
+  border-radius: 30px;
+}
+
+//good css
+
+figure:first-child {
+  @include grid-box($moderateViolet, $white);
+}
+
+figure:nth-child(2) {
+  @include grid-box($darkGrayishBlue, $white);
+}
+
+figure:nth-child(3),
+figure:last-child {
+  @include grid-box($white, 0);
+}
+
+figure:nth-child(4) {
+  @include grid-box($darkBlackishBlue, $white);
 }
