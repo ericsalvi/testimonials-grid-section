@@ -10,36 +10,73 @@
 }
 
 body {
-  background: hsl(0deg, 0%, 81%);
+  background: hsl(210deg, 46%, 95%);
+  color: hsl(217deg, 19%, 35%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 70px 24px;
 }
-
-main {
+body main {
   display: grid;
-  gap: 30px;
-  padding: 30px;
+  gap: 25px;
 }
-
-figure {
-  padding: 20px;
-  border-radius: 30px;
+body main figure {
+  padding: 24px 30px 30px;
+  border-radius: 8px;
+  box-shadow: 29px 33px 55px -30px rgba(72, 85, 106, 0.3);
+  -webkit-box-shadow: 29px 33px 55px -30px rgba(72, 85, 106, 0.3);
+  -moz-box-shadow: 29px 33px 55px -30px rgba(72, 85, 106, 0.3);
 }
-
-figure:first-child {
+body main figure figcaption {
+  align-items: center;
+  display: flex;
+  gap: 14.5px;
+  margin-bottom: 15px;
+}
+body main figure figcaption img {
+  border: 2px solid hsla(0deg, 0%, 81%, 0.5);
+  border-radius: 50%;
+  height: auto;
+  width: 32px;
+}
+body main figure figcaption cite {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+body main figure figcaption cite em {
+  color: inherit;
+  font-size: 0.846rem;
+  font-style: normal;
+  margin-top: 2px;
+  opacity: 50%;
+}
+body main figure h1 {
+  font-size: 1.615rem;
+  letter-spacing: -0.21px;
+  margin-bottom: 15px;
+}
+body main figure blockquote {
+  letter-spacing: 0.08px;
+  line-height: 1.4;
+  opacity: 70%;
+  padding-left: 1px;
+}
+body main figure:first-child {
   background-color: hsl(263deg, 55%, 52%);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 81%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: 90%;
 }
-
-figure:nth-child(2) {
+body main figure:nth-child(2) {
   background-color: hsl(217deg, 19%, 35%);
   color: hsl(0deg, 0%, 100%);
 }
-
-figure:nth-child(3),
-figure:last-child {
+body main figure:nth-child(3), body main figure:last-child {
   background-color: hsl(0deg, 0%, 100%);
 }
-
-figure:nth-child(4) {
+body main figure:nth-child(4) {
   background-color: hsl(219deg, 29%, 14%);
   color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=styles.css.map */

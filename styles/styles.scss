@@ -11,38 +11,78 @@
   -webkit-font-smoothing: antialiased;
 }
 
-//temp css
-
 body {
-  background: $lightGray;
-}
+  background: $lightGrayishBlue;
+  color: $darkGrayishBlue;
+  font-family: $barlow;
+  padding: 70px 24px;
 
-main {
-  display: grid;
-  gap: 30px;
-  padding: 30px;
-}
+  main {
+    display: grid;
+    gap: 25px;
 
-figure {
-  padding: 20px;
-  border-radius: 30px;
-}
+    figure {
+      padding: 24px 30px 30px;
+      border-radius: 8px;
+      box-shadow: 29px 33px 55px -30px rgba(72, 85, 106, 0.3);
+      -webkit-box-shadow: 29px 33px 55px -30px rgba(72, 85, 106, 0.3);
+      -moz-box-shadow: 29px 33px 55px -30px rgba(72, 85, 106, 0.3);
 
-//good css
+      figcaption {
+        align-items: center;
+        display: flex;
+        gap: 14.5px;
+        margin-bottom: 15px;
 
-figure:first-child {
-  @include grid-box($moderateViolet, $white);
-}
+        img {
+          border: 2px solid hsla(0, 0%, 81%, 0.5);
+          border-radius: 50%;
+          height: auto;
+          width: 32px;
+        }
 
-figure:nth-child(2) {
-  @include grid-box($darkGrayishBlue, $white);
-}
+        cite {
+          display: flex;
+          flex-direction: column;
+          font-style: normal;
 
-figure:nth-child(3),
-figure:last-child {
-  @include grid-box($white, 0);
-}
-
-figure:nth-child(4) {
-  @include grid-box($darkBlackishBlue, $white);
+          em {
+            color: inherit;
+            font-size: 0.846rem;
+            font-style: normal;
+            margin-top: 2px;
+            opacity: 50%;
+          }
+        }
+      }
+      h1 {
+        font-size: 1.615rem;
+        letter-spacing: -0.21px;
+        margin-bottom: 15px;
+      }
+      blockquote {
+        letter-spacing: 0.08px;
+        line-height: 1.4;
+        opacity: 70%;
+        padding-left: 1px;
+      }
+      &:first-child {
+        @include grid-box($moderateViolet, $lightGray);
+        background-image: url(../images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: 90%;
+      }
+      &:nth-child(2) {
+        @include grid-box($darkGrayishBlue, $white);
+      }
+      &:nth-child(3),
+      &:last-child {
+        @include grid-box($white, 0);
+      }
+      &:nth-child(4) {
+        @include grid-box($darkBlackishBlue, $white);
+      }
+    }
+  }
 }
