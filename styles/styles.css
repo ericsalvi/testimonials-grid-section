@@ -6,14 +6,16 @@
   font-size: 13px;
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: hsl(210deg, 46%, 95%);
   color: hsl(217deg, 19%, 35%);
+  display: grid;
   font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100vh;
   padding: 70px 24px;
+  place-content: center;
 }
 body main {
   display: grid;
@@ -29,11 +31,11 @@ body main figure {
 body main figure figcaption {
   align-items: center;
   display: flex;
-  gap: 14.5px;
+  gap: 15px;
   margin-bottom: 15px;
 }
 body main figure figcaption img {
-  border: 2px solid hsla(0deg, 0%, 81%, 0.5);
+  border: 2px solid transparent;
   border-radius: 50%;
   height: auto;
   width: 32px;
@@ -69,6 +71,9 @@ body main figure:first-child {
   background-position-y: top;
   background-position-x: 90%;
 }
+body main figure:first-child img {
+  border: 2px solid hsla(0deg, 0%, 81%, 0.4);
+}
 body main figure:nth-child(2) {
   background-color: hsl(217deg, 19%, 35%);
   color: hsl(0deg, 0%, 100%);
@@ -79,4 +84,7 @@ body main figure:nth-child(3), body main figure:last-child {
 body main figure:nth-child(4) {
   background-color: hsl(219deg, 29%, 14%);
   color: hsl(0deg, 0%, 100%);
+}
+body main figure:nth-child(4) img {
+  border: 2px solid hsl(263deg, 55%, 52%);
 }/*# sourceMappingURL=styles.css.map */
