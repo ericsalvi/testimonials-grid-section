@@ -87,4 +87,37 @@ body main figure:nth-child(4) {
 }
 body main figure:nth-child(4) img {
   border: 2px solid hsl(263deg, 55%, 52%);
+}
+
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main figure:first-child,
+main figure:nth-child(4),
+main figure:last-child {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1010px;
+  }
+}
+@media (min-width: 1110px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1010px;
+  }
+  main figure:first-child {
+    grid-column: 1/3;
+  }
+  main figure:nth-child(4) {
+    grid-column: 2/4;
+  }
+  main figure:last-child {
+    grid-area: 1/4/3/5;
+  }
 }/*# sourceMappingURL=styles.css.map */

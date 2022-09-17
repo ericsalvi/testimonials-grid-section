@@ -98,17 +98,4 @@ body {
   }
 }
 
-// body main {
-//   display: grid;
-//   gap: 25px;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-template-rows: repeat(2, 1fr);
-//   max-width: 1000px;
-// }
-
-// figure:nth-child(5) {
-//   grid-row-start: 1;
-//   grid-row-end: 3;
-//   grid-column-start: 4;
-//   grid-column-end: 5;
-// }
+@import "media";
