@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/testimonial-grid-no-class-names-divs-or-spans-only-semantic-html-ExoIOuIULu)
+- Live Site URL: [https://ericsalvi.github.io/testimonials-grid-section/](https://ericsalvi.github.io/testimonials-grid-section/)
 
 ## My process
 
