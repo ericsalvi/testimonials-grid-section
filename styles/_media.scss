@@ -13,7 +13,7 @@
 @media (min-width: 855px) {
   main {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto;
     max-width: 1110px;
 
     figure:nth-child(2),
@@ -42,7 +42,13 @@
   body {
     main {
       gap: 30px;
+      row-gap: 25px;
 
+      figure {
+        h1 {
+          font-size: 1.6rem;
+        }
+      }
       figure:first-child {
         background-position-x: 82%;
         grid-column: 1 / 3;
